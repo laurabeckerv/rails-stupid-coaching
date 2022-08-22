@@ -1,8 +1,15 @@
 
 <h1>Stupid Coaching</h1>
-<p> Ask your coach anyting: </p>
 
-<form action="/answer" data-turbo="false">
+<%# <form action="/answer" data-turbo="false">
   <input type="text" name="question">
   <input type="submit" value="Ask!">
+</form> %>
+
+<form action="/answer" data-turbo="false">
+  <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">Ask your coach anyting:</label>
+    <input type="text" name="question" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+  </div>
+  <button type="submit" class="btn btn-primary">Ask!</button>
 </form>
